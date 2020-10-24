@@ -283,7 +283,7 @@
 }
 
 .teambox .player .hp_bar {
-    height: 2px;
+    height: 7px;
 }
 .teambox.right .player .hp_bar {
     align-self: flex-end;

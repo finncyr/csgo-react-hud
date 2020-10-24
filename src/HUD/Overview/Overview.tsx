@@ -1,6 +1,6 @@
 import React from 'react';
 import './../Styles/overviews.css';
-import { configs } from '../../App';
+import { configs, actions } from '../../App';
 import * as I from '../../api/interfaces';
 import PlayerOverview from '../PlayerOverview/PlayerOverview';
 import MatchOverview from '../MatchOverview/MatchOverview';
@@ -77,6 +77,14 @@ export default class Overview extends React.Component<IProps, IState> {
                     teams: this.state.match.teams
                 }
             }, this.loadTeams);
+        });
+        actions.on("togglePlayer", () => {
+            this.setState( {
+                player: {
+                    data: this.state.player.data || null,
+                    show: !this.state.player.show
+                }
+            });
         });
     }
     getVeto = () => {
