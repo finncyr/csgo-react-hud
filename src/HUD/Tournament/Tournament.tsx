@@ -27,12 +27,12 @@ export default class Tournament extends React.Component<{}, State> {
                 if(show !== "show"){
                     return this.setState({show: false});
                 }
-                
+
                 this.setState({tournament}, () => {
                     this.setState({show:true})
                 });
             });
-            
+
             Promise.all([api.match.get(), api.teams.get()]).then(([matches, teams]) =>{
                 this.setState({matches, teams});
             });

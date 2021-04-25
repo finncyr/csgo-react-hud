@@ -37,7 +37,7 @@ export default class Radar extends React.Component<Props, State> {
     }
 
     render() {
-        const { players, player, bomb, grenades, map } = this.props.game; 
+        const { players, player, bomb, grenades, map } = this.props.game;
         return <LexoRadarContainer
             players={players}
             player={player}

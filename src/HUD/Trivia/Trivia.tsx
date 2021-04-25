@@ -30,7 +30,7 @@ export default class Trivia extends React.Component<any, { title: string, conten
             this.setState({show: !this.state.show})
         });
 	}
-	
+
 	render() {
 		return (
 			<div className={`trivia_container ${this.state.show ? 'show': 'hide'}`}>

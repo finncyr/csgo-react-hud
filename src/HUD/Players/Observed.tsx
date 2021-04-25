@@ -51,7 +51,7 @@ export default class Observed extends React.Component<{ player: Player | null, v
 					<div className="grenade_container">
 						{grenades.map(grenade => <React.Fragment key={`${player.steamid}_${grenade.name}_${grenade.ammo_reserve || 1}`}>
 							<Weapon weapon={grenade.name} active={grenade.state === "active"} isGrenade />
-							{ 
+							{
 							grenade.ammo_reserve === 2 ? <Weapon weapon={grenade.name} active={grenade.state === "active"} isGrenade /> : null }
 						</React.Fragment>)}
 					</div>

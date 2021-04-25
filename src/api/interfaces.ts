@@ -136,7 +136,7 @@ export type Knife =
 | "knife_outdoor" // Nomad Knife
 | "knife_gut"//
 | "knife_gypsy_jackknife"//
-| "knife_karambit"// 
+| "knife_karambit"//
 | "knife_bayonet" //
 | "knife_cord" //
 | "knife_m9_bayonet"//

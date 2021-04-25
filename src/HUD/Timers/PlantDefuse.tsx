@@ -33,7 +33,7 @@ export default class Bomb extends React.Component<IProps> {
             {this.getCaption(timer.type, timer.player)}
           </div> : null
         }
-          
+
           <div className="defuse_plant_bar" style={{ width: `${(timer && timer.width) || 0}%` }}></div>
       </div>
     );

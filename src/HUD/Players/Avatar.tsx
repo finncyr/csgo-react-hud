@@ -44,7 +44,7 @@ export default class Avatar extends React.Component<IProps, IState> {
           {
             this.props.showSkull ? <Skull height={this.props.height} width={this.props.width} /> : <img src={avatarData.url} height={this.props.height} width={this.props.width} alt={'Avatar'} />
           }
-          
+
       </div>
     );
   }

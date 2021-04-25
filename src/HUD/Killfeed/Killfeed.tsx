@@ -40,7 +40,7 @@ export default class Killfeed extends React.Component<any, { events: (BombEvent 
             return state;
         })
     }
-    
+
 	async componentDidMount() {
 		GSI.on("kill", kill => {
             this.addKill(kill);
